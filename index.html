@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<style>
+body {
+    background-color: #1c7647;
+        margin: 0;
+        padding: 0;
+    }
+    .tooltip {
+        position: relative;
+        display: inline-block;
+        outline-color: rgba(47, 79, 79, 0.2);
+        outline-style: solid;
+        ouline-width: 1px;
+    }
+
+    .tooltip .tooltiptext {
+        outline-color: rgba(47, 79, 79, 0.2);
+        visibility: hidden;
+        width: 300px;
+        background-color: black;
+        color: #fff;
+        text-align: left;
+        text-anchor: start;
+        border-radius: 6px;
+        padding: 10px 10px;
+        text-shadow: black 0 0.1em 0.5em;
+
+        /* Position the tooltip */
+        position: absolute;
+        top: 0px;
+        left: 20px;
+        z-index: 1;
+        user-select: none;
+        user-focus: none;
+    }
+
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
+    }
+    .tooltiptext:hover {
+        display: none;
+    }
+</style>
+<body style="text-align:center;">
+
+
+<head>
+    <meta charset="UTF-8">
+    <canvas id="mainCanvas" ></canvas>
+    <title>Pastoral Dreams</title>
+</head>
+<body>
+
+<script src="./embedding-drawer.js"></script>
+</body>
