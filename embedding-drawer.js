@@ -21,6 +21,7 @@ fetch('./data/embeddings.json').then((response) => response.json()).then((embedd
             embeddingElement.style.borderRadius = "50%";
             embeddingElement.className = "tooltip";
             embeddingElement.style.cursor = "pointer";
+            embeddingElement.onclick = "";
             var tooltip = document.createElement("span");
             tooltip.className = "tooltiptext";
             tooltip.innerHTML = embedding.text;
